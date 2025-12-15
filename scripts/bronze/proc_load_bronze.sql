@@ -2,6 +2,11 @@
 =====================================
 Load data into table
 =====================================
+Script Purpose:
+    This stored procudure to load datas into 'bronze' layer from external CSV file
+    It perform the following actions:
+    - Truncates the bronze tables before loading data.
+    - Uses the `BULK INSERT` command to load data into tables.
 */
 
 -- Create Procudure
