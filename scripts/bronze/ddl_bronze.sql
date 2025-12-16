@@ -10,7 +10,7 @@ ERP source: 'erp_cust_az12', 'erp_loc_a101', 'erp_px_cat_g1v2'
 -- Create customer information table from CRM source
 IF OBJECT_ID ('bronze.crm_cust_info','U') IS NOT NULL
 	DROP TABLE bronze.crm_cust_info;
-CREATE TABLE IF bronze.crm_cust_info(
+CREATE TABLE bronze.crm_cust_info(
 	cst_id INT,
 	cst_key NVARCHAR(50),
 	cst_firstname NVARCHAR(50),
